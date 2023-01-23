@@ -1,0 +1,512 @@
+/* Name: Divyaben Patel, Student Number: 8790652  */
+body {
+    width: 90%; /* width given to the full body of the website */
+    margin: 30px auto; /* margin of the website from top is 30px and left and right would be auto to display content of the webiste in center*/
+    background-color: #E7E8D1; /* full body background color */
+    font-family: "Trirong", serif; /* whole website font style is Trirong */
+    letter-spacing: 0.5px; /* all the text inside body will have space between letters of 0.5px */
+
+}
+
+main {
+    color: #461f03; /*content text color inisde the main */
+}
+
+/**************************
+Header Css
+****************************/
+
+.headerContainer { /* container div class for header */
+    display: flex; /*Container div header content will display in flex*/
+    background-color: #A7BEAE; /* header background color */
+    color: #ba0341; /* text color */
+}
+.headerContainer a {
+    width: 11%; /* website logo set in a tag so width for it*/
+    margin: 2px 0 0; /* only top margin is 2px*/
+}
+.headerContainer img {
+    width: 56%; /*width of logo image */
+    margin: 10px 53px; /* margin top, bottom and left, right for logo image*/
+}
+
+header h1 {
+    margin-left: 74px; /* left margin for header text */
+}
+
+/**************************
+Navigation Css
+****************************/
+
+
+nav {
+    padding: 20px; /* all side padding inside navigation bar */
+    text-align: center; /*make the navigation content in center*/
+}
+
+nav a {
+    padding: 0 60px; /* left and right padding between two anchor tag inside the nav tag while top and bottom padding is 0 */
+    text-decoration: none; /*text decoration none to remove anchor tag default text underline */
+    color: #071b89; /* color of the text*/
+    font-size: 20px; /* nav text size */
+    font-weight: 600; /* nav text font is 600 bold*/
+}
+
+nav ul {
+    list-style-type: none; /* unordered list style type is none. whic remove bulletpoints for list*/
+    margin: 0; /* outer margin for ul is 0 */
+    padding: 0; /* inner padding for ul is 0 */
+}
+
+
+nav > ul > li {
+    display: inline-block; /*nav li will be display in one line using inline-block */
+    position: relative; /* position is relative */
+}
+
+nav ul li ul {
+    position: absolute; /*two tire navigation. SO sub menu ul position is absolute of nav ul li*/
+    left: 30px; /*left margin is 30px*/
+    width: 200px; /*width of submenu */
+    z-index: 999; /*this will never hide submenu under any content when appear*/
+    text-align: left; /*text alignment is left*/
+    background-color: #3f51b5; /* background color of submenu is blue*/
+    box-shadow: 0 0 5px #3f51b5; /*box shadow for submenu*/
+    transition: 0.7s ease-in; /*transition animation is happen ease-in in 1 second*/
+    opacity: 0; /*initially opaity 0 mean it will hide the submenu*/
+    max-height: 0; /*maximum height will be 0 initially to hide it*/
+    visibility: hidden; /*visibility hidden without hover */
+    
+}
+
+nav ul li:hover ul { /* on nav ul li hover the mouse then ul submenu will be appear */
+    max-height: 200px; /*maximum height of submenu will be 200px when appear on hover*/
+    opacity: 1; /*opacity of submenu will show hidden submenu */
+    visibility: visible; /*submenu will be visible*/
+}
+
+nav > ul > li > a:hover {
+    color: #b93207; /*navgation menu color will be changed to brown on mouse hover */
+}
+
+nav ul li ul li {
+    clear: both; /* it will clear display li hover effect from inner li of the submenu so hover effect of the submenu will only happen on nav ul li and not on ul li inisde the nav ul li */
+}
+
+nav ul li ul a {
+    color: white; /*submenu text color*/
+    padding: 15px; /*submenu anchor tag padding from all side*/
+    display: block; /*display block will show a text*/
+    font-size: 17px; /*submenu font size*/
+    letter-spacing: 0.1em; /*submneu text word spacing is 0.1em*/
+
+}
+
+nav ul li ul li:hover a:hover{ /*mouse hover effect on submenu li text */
+    color: #3f51b5; /*submenu color on hover will be changed to blue*/
+    background-color: #f7e7d9; /*submenu background-color on hover will be changed to white*/
+    cursor: pointer; /* cursor will be pointer hand*/
+}
+
+
+
+/**************************
+Home page Main content Css
+****************************/
+main {
+    width: 100%; /*main content width 100%*/
+}
+
+.heroContent img {
+    width: 100%; /*main hero image on home page is 100%*/
+}
+
+.heroContent h2 {
+    text-align: center; /* head tag h2 content alignment center after the hero image*/
+}
+
+.heroContent p {
+    text-align: center; /* full width p tag content alignment center after the hero image and h2*/
+}
+
+.mainContent {
+    display: grid; /*main content display in grid */
+    grid-template-columns: 1fr 1fr; /* grid will set as column. 1st column size is 1fr and second column size is also 1fr*/
+    grid-template-rows: 1fr 1fr; /*grid rows will also divide in 2 rows width size 1fr for each rows*/
+    grid-gap: 30px; /*inner grid gap between all the grid is 30px*/
+    margin: 30px; /*outer margin for main content is 30px */
+}
+
+.img1 {
+    background-image: url(../images/img1.png); /*background image display using url */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* image shap will be clip-path polygone*/
+    background-position-y: bottom; /*image position from y axis*/
+    background-repeat: no-repeat; /*image repeatation is stopped using no-repeat */
+}
+.img2 {
+    background-image: url(../images/img2.png); /*background-image display using url*/
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); /*octagonal shap for another image */
+    background-position: center; /*image position is center*/ 
+    background-repeat: no-repeat; /*image repeatation is stopped using no-repeat */
+}
+
+.img2Div {
+    text-align: center; /*image div text alignment center*/
+}
+
+/**************************
+    card css
+/*************************/
+.cardContent {
+    width: 100%; /*card main div width 100%*/
+}
+
+.cardContent h2 {
+    text-align: center; /*heading for card content is align center*/
+}
+
+.cards {
+    display: grid; /*card div divide in grid*/
+    grid-template-columns: repeat(3, 1fr); /*card will repeat size of the column 3 times 1fr*/
+    grid-gap: 30px; /*gap size between grids*/
+    margin: 30px; /*outer margin of the card div*/
+    font-size: 16px; /*card content text size*/
+}
+
+.subCard{
+    display: flex; /*card inner content display in flex*/
+    flex-flow: column; /*flex flow is set to column*/
+    border:  2px solid #7955489c; /*card border*/
+    border-radius: 10px; /*card radius 10px*/
+    padding: 30px; /*card inner padding/spacing 20px*/
+    box-shadow: 0 0 5px #7955489c; /*box shadow given to all 3 cards */
+}
+
+.subCard:hover { /*mouse hover on all card*/
+    box-shadow: 10px 5px 24px #7955489c; /*box shadow will appear more to lift the card */
+}
+
+.subCard h4{
+    margin: 20px 0 0 0; /*margin top for sub heading inside the card is 20px*/
+}
+.subCard .btnReadMore {
+    width: 142px; /*button width*/
+    background-color: #7955489c; /*card readmore button background color*/
+    color: #461f03; /*button text color brown */
+    padding: 6px; /*button inner padding 6px from all side*/
+    border: 1px solid #7955489c; /*border 1px solid brown from all side*/
+    border-radius: 10px; /*border rounded by 10px */
+    font-size: 18px; /*button text size*/
+    font-weight: bold; /*text weight bold*/
+    text-decoration: none; /*text decoration none for button as it is anchor tag*/
+    text-align: center; /*button text align center*/
+    letter-spacing: 1px; /*text word spacing 1px*/
+    box-shadow: 2px 2px 2px #892906; /*button box shadow givem darker*/
+    
+}
+
+.btnReadMore:focus { /*focus is given when button clicked */
+    box-shadow: none; /*bax shadow will be removed when click so we know which button got clicked*/
+}
+
+.subCard img { 
+    order: -1; /*image order give -1 to make it apear 1st in the display flex*/
+    align-self: center; /*alignment of image is center*/
+    width: 100%; /*image width given*/
+    height: 170px; /*image height given*/
+}
+.subCard .cardImg {
+    order: -1; /*image order give -1 to make it apear 1st in the display flex*/
+    
+}
+
+.subCard button:hover {
+    cursor: pointer; /*on button hover cursor will be pointer hand*/
+}
+
+
+
+
+
+
+/**********************************
+    Innerpage Css
+/*********************************/
+
+
+/**********************************
+    Innerpage  text over image Css
+/*********************************/
+
+.innerHeroContent img {
+     width: 100%; /*innerpage hero image width*/
+}
+.innerPageTitle {
+    position: absolute; /*text over image postion absolute*/
+    left: 8%; /*left margin 8%*/
+    top: 80%; /*top margin 80%*/
+    color: whitesmoke; /*text color whitesmoke*/
+    z-index: 10; /*z-index to make it apear on top of the image all the time*/
+    letter-spacing: 0.2em; /*text word spacing given*/
+    text-shadow: 4px 3px 4px #e91e63; /*text shadow given to make it loop creative font*/
+}
+
+/***************************************
+    Innerpage video and text content Css
+/***************************************/
+
+.innerTextVideo {
+    display: grid; /*main div for video and its side content displayed as a grid*/
+    grid-template-columns: 1fr 1fr; /*2 columns size divide in 1fr size*/
+    grid-gap: 30px; /*gap size between grid*/
+    margin: 30px; /*outer margin for whole div*/
+
+}
+
+
+/***************************************
+    Innerpage table content Css
+/***************************************/
+
+.innerTableContent h3 { /*table heading*/
+    text-align: center; /*heading text align in center*/
+}
+
+.innerTableContent table {
+    width: 95.2%; /*table width given*/
+    border: 2px solid black; /*border given to table*/
+    border-collapse: collapse; /*border collapse to show one and not double border*/
+    margin: 0 28px;
+}
+
+.innerTableContent table th, .innerTableContent table td {
+    border: 2px solid black; /*border given to inner td and th*/
+    padding: 10px; /*padding inside th and td given*/
+    text-align: center; /*table content text align in center*/
+
+}
+
+
+/**********************
+    Form content Css
+/**********************/
+.formContent { 
+    background-color: #d7a18d1f; /*form background color*/
+    width: 90.3%; /*form div width*/
+    margin-left: 28px; /*margin left given*/
+    margin: 30px; /*over all margin */
+    padding: 30px; /*over all inner padding*/
+}
+
+.formContent h3 {
+    text-align: center; /*form heading align in center*/
+    margin: 0; /*removed h3 margin to set 30px with form padding*/
+}
+
+.gridForm {
+    width: 75%; /*form width*/
+    display: grid; /*form content display in grid*/
+    grid-template-columns: 1fr 1fr; /*grid divide in 2 columns with size 1fr*/
+    padding: 30px; /*inner padding of form div*/
+    margin: 0 auto; /*form dispaly in center from left and right*/
+}
+
+fieldset {
+    box-shadow: 0px 0px 5px #8b451391; /*field set box shadow give*/
+    border: 0; /*fieldset border given 0 to hide it*/
+    
+}
+
+.formField {
+    margin: 30px 5px; /*all the form fields top bottom margin will be 30px and left rigth will be 5 to set in one line*/
+}
+.formField input {
+    width: 155px; /*input field width*/
+    padding: 5px; /*input field inner padding*/
+}
+.formField label {
+    display: inline-block; /*labels display inline block*/
+    width: 131px; /*label width given*/
+    vertical-align: top; /*label vertical align top to show all the label top start of input field and in one line as input field */
+
+}
+.formField textarea {
+    width: 163px; /*textarea width to match other input field with*/
+    height: 65px; /*textarea height given*/
+}
+.formField select {
+    width: 163px; /*select options field width given to match other input field width*/
+    padding: 5px; /*padding inner given*/
+}
+
+.btnField {
+    text-align: center; /*button text centred*/
+    display: grid; /*button display in grid*/
+    grid-template-columns: 1fr 1fr; /*2 columns of size 1fr*/
+}
+
+/* reset button */
+.btnField input {
+    justify-self: center; /*reset button content justify to center*/
+    width: 150px; /*reset button width*/
+    padding: 5px 0; /*reset button padding top, bottom*/
+    font-weight: bold; /*reset btn text weight given*/
+    margin-left: 146px; /*left margin*/
+    background: #7955489c; /*background color for reset button*/
+    color: #461f03; /*text color*/
+    border: 1px solid #7955489c; /*border given*/
+    letter-spacing: 1px; /*text word spacing given*/
+    text-transform: uppercase; /*text converted to uppercase*/
+    border-radius: 10px; /*btn border radius given*/
+
+}
+.btnField input:hover {
+    box-shadow: 0px 0px 12px 3px #b8504291; /*on btn hiver boxshadow will appear*/
+    cursor: pointer; 
+    transform: scale(1.04); /*scale button to look bigger when hover*/
+}
+
+/* submit button css is same as reset button */
+.btnField button {
+    justify-self: center;
+    margin-right: 136px;
+    background: none;
+    width: 191px;
+    padding: 5px 0px;
+    font-weight: bold;
+    background: #7955489c;
+    color: #461f03;
+    border: 1px solid #7955489c;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+/* submit button hover css is same as reset */
+.btnField button:hover {
+    box-shadow: 0px 0px 12px 3px #b8504291;
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+
+/**********************
+    Diet page Css
+/**********************/
+/* border-bottom given between all the diet menu days div */
+.DayOne, .DayTwo, .DayThree, .DayFour, .DayFive {
+    border-bottom: 1px solid black;
+}
+
+/* outer margin bottom given  30px */
+.subContent {
+    margin-bottom: 30px;
+}
+
+/*****************************
+About us css
+******************************/
+
+/* about us main div content display in grid with 1 columns and margin 30px with gap size 30 between grids */
+.aboutusContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 30px;
+}
+
+/* about us heading margin set to 0 */
+.aboutusInfo h2 {
+    margin: 0;
+    letter-spacing: 0.2em;
+}
+
+/* inner info of about us display in grid with 2 columns  */
+.gymInfo {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    /* grid-gap: 15px */
+}
+
+/*************************************
+all 3 cards read more content page CSS
+**************************************/
+
+.cardReadContent {
+    padding: 30px;
+    width: 95%;
+}
+.cardReadContent h1 {
+    border-bottom: 1px solid lightgray;
+    margin: 0px 30px 30px;
+}
+
+.cardReadMore {
+    padding: 30px;
+}
+.cardReadMore img {
+    width: 100%;
+}
+
+/**********************
+    Footer Css
+/**********************/
+
+.footerMenu {
+    padding: 30px;
+}
+
+.footerMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+.footerMenu > ul > li {
+    display: inline-block; /*footer li display inline block to set in one line*/
+    position: relative;
+}
+
+.footerMenu > ul > li > a {
+    text-decoration: none;
+    color: #071b89;
+    text-decoration: none;
+    padding: 0 100px;
+    font-weight: bold;
+    
+}
+
+.footerMenu > ul > li > ul {
+    margin-top: 20px;
+}
+
+.footerMenu > ul > li > ul > li > a {
+    text-decoration: none;
+    color: #071b89;
+}
+
+.footerContainer {
+    text-align: center;
+    width: 100%;
+    background-color: #A7BEAE;
+    
+}
+.footer {
+    /* border: 1px solid black; */
+    /* background-color: #A7BEAE; */
+    /* padding: 20px; */
+    height: 55px;
+}
+
+.footer p {
+    /* margin: 30px 0 0; */
+    color: #06166bc2;
+    line-height: 55px;
+    border-top: 1px solid lightgray;
+    width: 95.5%;
+    margin: 0 30px;
+
+}
+

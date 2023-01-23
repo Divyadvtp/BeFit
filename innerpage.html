@@ -1,0 +1,248 @@
+<!-- Name: Divyaben Patel, Student Number: 8790652 -->
+<!-- document type html -->
+<!DOCTYPE html>
+<!-- html tag -->
+<html lang="en">
+<!-- head tag -->
+<head>
+    <!-- metadata about html document-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeFit-Beginners</title>
+    <!-- external favicon link to show favicon in browser tab -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <!-- external css link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- external font family link, google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+</head>
+<!-- body tag -->
+<body>
+     <!-- header content -->
+    <header>
+        <div class="headerContainer">
+            <!-- header logo -->
+            <a href="./homepage.html"><img src="./images/logo.png" alt="heart logo with heart bit"></a>
+            <!-- header heading -->
+            <h1>BeFit - Divyaben Patel - dpatel0652@conestogac.on.ca</h1>
+        </div>
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="./homepage.html">Home</a></li>
+                <li>
+                    <a href="./innerpage.html">Beginners</a>
+                    <ul>
+                        <li><a href="#beginnerVideo">Video</a></li>
+                        <li><a href="#chart">Stay Away Chart</a></li>
+                    </ul>
+                </li>
+                <li><a href="./diet.html">Diet</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main content -->
+    <main>
+        <div class="innerHeroContent">
+            <!-- hero image -->
+            <img class="innerPageImg" src="./images/innerHero.png" alt="a girl surrounded by books">
+            <!-- heading text over image -->
+            <h2 class="innerPageTitle">The body achieves what the mind believes!</h2>
+        </div>
+        <!-- video content with its text on the side -->
+        <div class="innerTextVideo" id="beginnerVideo">
+            <div>
+                <!-- Below Content reference 5): https://www.healthline.com/nutrition/how-to-start-exercising#The-bottom-line -->
+                <h3>The bottom line that Beginner should keep in mind.</h3>
+                <p>
+                    Starting a new exercise routine can be challenging. However, having real objectives can help you maintain a fitness program in the long term.
+                    <br><br>
+                    There are many different types of physical activity to choose from. Find a few that work for you and be sure to vary them occasionally.
+                    <br><br>
+                    The goal is to start slowly, build up your fitness level, and let your body rest from time to time to help prevent injuries.
+                    <br><br>
+                    Moreover, you can try our sample easy home workout by following video on the right.
+                    <br><br>
+                    It is also important to eat a healthy diet and hydrate regularly as well as check in with your healthcare provider to monitor your health.
+                </p>
+            </div>
+            <!-- poster reference 6): https://img.myloview.com/posters/commit-to-be-fit-inspiring-workout-and-fitness-gym-motivation-quote-illustration-sign-creative-strong-sport-vector-400-132946991.jpg -->
+
+            <!-- video reference 7): https://www.pexels.com/video/woman-stretching-3760968/ -->
+            <div class="videoDiv">
+                <video controls width="590px" height="460px" poster="./images/Poster.png">
+                    <source src="./media/exercise.mp4" type="video/mp4" />
+                </video>
+               
+            </div>
+        </div>
+        <!-- table data -->
+        <div class="innerTableContent" id="chart">
+            <!-- below content reference 8): https://www.independent.co.uk/life-style/this-chart-shows-how-long-you-have-to-exercise-to-burn-off-the-calories-in-popular-junk-foods-a7728481.html  -->
+            <h3>This chart shows how long you have to exercise to burn off the  calories in popular junk foods.</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>FOOD TYPE</th>
+                        <th>CALORIES APROX.</th>
+                        <th>WALK OFF KCAL<br><p>(medium walk 3-5mph)</p></th>
+                        <th>RUN OFF KCAL<br><p>(slow running 5mph)</p></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sugary soft drink (330ml can)</td>
+                        <td>138</td>
+                        <td>26 min</td>
+                        <td>13 min</td>
+                    </tr>
+                    <tr>
+                        <td>Standard chocolate bar</td>
+                        <td>229</td>
+                        <td>42 min</td>
+                        <td>22 min</td>
+                    </tr>
+                    <tr>
+                        <td>Sandwiche </td>
+                        <td>445</td>
+                        <td>1 hr 22 min</td>
+                        <td>42 min</td>
+                    </tr>
+                    <tr>
+                        <td>Large Pizza (1/4 pizza)</td>
+                        <td>449</td>
+                        <td>1 hr 23 min</td>
+                        <td>43 min</td>
+                    </tr>
+                    <tr>
+                        <td>Medium Mocha Coffee</td>
+                        <td>290</td>
+                        <td>53 min</td>
+                        <td>28 min</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- form data -->
+        <div class="formContent">
+            <h3>You are one workout away from a better mood!</h3>
+            <form>
+                <div class="gridForm">
+                <fieldset>
+                    <div class="formField">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="formField">
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <!-- 2 option group with its 3 sub options -->
+                    <div class="formField">
+                        <label for="location">Location:</label>
+                        <select name="location" id="location">
+                            <option value="">---- Choose City ----</option>
+                            <optgroup label="Ontario">
+                                <option value="waterloo">Waterloo</option>
+                                <option value="brampton">Brampton</option>
+                                <option value="kitchner">Kitchner</option>
+                            </optgroup>
+                            <optgroup label="Quebec">
+                                <option value="montreal">Montreal</option>
+                                <option value="quebeccity">Quebec City</option>
+                                <option value="sherbrooke">Sherbrooke</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="formField">
+                        <label for="address">Address: </label>
+                        <textarea></textarea>
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                    <!-- 2 radio button options -->
+                    <div class="radiomainField">
+                        <p class="radioText">Do you have any injuries?</p>
+                        <div class="radioField">
+                            <input type="radio" name="survey" id="surveyYes">
+                            <label for="surveyYes">Yes</label>
+                        </div>
+                        <div class="radioField">
+                            <input type="radio" name="survey" id="surveyNo">
+                            <label for="surveyNor">No</label>
+                        </div>
+                    </div>
+                    <!-- 3 checkbox options -->
+                    <div class="checkBoxField">
+                        <div>
+                            <p class="checkBoxText">What is your fat loss focus?</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="focus1" name="focus1" value="upperBody">
+                            <label for="focus1"> Upper Body</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="focus2" name="focus2" value="lowerBody">
+                            <label for="focus2"> Lower Body</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="focus3" name="focus3" value="FullBody">
+                            <label for="focus3"> Full Body</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="btnField">
+                <!-- reset button -->
+                <input type="reset" name="reset" id="reset">
+                <!-- submit button -->
+                <button class="btnSubmit" type="submit">Submit Request</button>
+            </div>
+                
+            </form>
+        </div>
+    </main>
+   <!-- footer content -->
+    <footer>
+        <div class="footerContainer">
+            <!-- footer menu with submenu -->
+            <div class="footerMenu">
+                <ul>
+                    <li> 
+                        <a href="#">Availability</a>
+                        <ul>
+                            <li><a href="#">Staff</a></li>
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">Equipments</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Our Location</a>
+                        <ul>
+                            <li><a href="/">Ontario</a></li>
+                            <li><a href="/">Quebec</a></li>
+                            <li><a href="/">British Columbia (Soon)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Connect With Us</a>
+                        <ul>
+                            <li><a href="https://www.instagram.com/iwillgetlean/" target="_blank"><img style="width: 3%;padding: 0px 1px;" src="./images/instagram.svg" alt="Instagram Icon"> Instagram</a></li>
+                            <li><a href="https://www.facebook.com/iwillgetlean?hc_ref=ARTosdm1TtqxYByk8xvcPavh_mhhLh7BIBS63QxshNAxtdg9V-WWF8nU7MboWivB4EM&ref=nf_target&__xts__[0]=68.ARA30uujfRNh03ASohWCKG9uOPKGXdxPEOv6j0p1rIOrQOyfpqf_hVY9XuraD8akkLLCw7Ise4JYZe6XHshLQU1U3m2_yn8W2WEQ73PBpfkYoi7ewhkSIu2kXIlE0iI5aa1sJAgjqjQsWvUWogL74yYkPlTjcNwfnH4pK-wDlLXKoze5UKnKrEAJ73V5zlUR8RVZ-AsPZchf3DY4QCE0x76f-AHXB-kakJBhc7-NZdG_TAV9w4UfbDrd36-MAJIFK2zZOXmhbDfQkNFko3bHwI9-WxPPrSV9ZKAfOBBCCek1aCX06LekLVjSltP9NX4dWL-APqmy3claN5LFDUZL9KEr50Y35o250iHAqSpJXtJKksN4xgk" target="_blank"><img style="width: 3%;padding: 0px 4px;margin-left: -9px;" src="./images/facebook.svg" alt="facebook Icon">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/in/tailor-divya-8428b9110/" target="_blank"><img style="width: 3%;padding: 0px 4px;margin-left: -13px;" src="./images/linkedin.svg" alt="LinkedIn Icon">LinkedIn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- footer part 2 copyright -->
+            <div class="footer">
+                <p>&copy;Copyright - Divyaben Patel - dpatel0652@conestogac.on.ca</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
